@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Triangles</title>
+  <script type="text/javascript" src="javascripts/rune.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+
+<body onload="draw()">
+  <div class="inline">
+    <div id="canvas"></div>
+  </div>
+  <div id="buttons">
+    <script type="text/javascript" src="javascripts/triangles.js"></script>
+    <div class="inline">
+      <button class="inline" onclick="addTriangle()">Triangles++</button>
+      <p class="inline" id="numTris"></p>
+      <button class="inline" onclick="removeTriangle()">Triangle--</button>
+    </div>
+    <div class="inline">
+      <button class="inline" onclick="increaseWidth()">Size += 10</button>
+      <p class="inline" id="baseWidth"></p>
+      <button class="inline" onclick="decreaseWidth()">Size -= 10</button>
+    </div>
+    <div class="inline">
+      <button class="inline" onclick="increaseStroke()">Stroke++</button>
+      <p class="inline" id="strokeWidth"></p>
+      <button class="inline" onclick="decreaseStroke()">Stroke--</button>
+    </div>
+    <div>
+      <button id="download" onclick="download()">Download SVG</button>
+    </div>
+  </div>
+</body>
+</html>

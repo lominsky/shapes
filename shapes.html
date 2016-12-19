@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shapes</title>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="javascripts/rune.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body onload="draw()">
+  <div class="inline">
+    <div id="canvas"></div>
+  </div>
+  <div id="buttons">
+    <script type="text/javascript" src="javascripts/shape.js"></script>
+    <div class="inline">
+      <button class="inline" onclick="addShape()">Add Shape</button>
+      <p class="inline" id="numShapes"></p>
+      <button class="inline" onclick="removeShape()">Remove Shape</button>
+    </div>
+    <div class="inline">
+      <button class="inline" onclick="addSide()">Side++</button>
+      <p class="inline" id="numSides"></p>
+      <button class="inline" onclick="removeSide()">Side--</button>
+    </div>
+    <div class="inline">
+      <button class="inline" onclick="increaseRotation()">Rotation += 5</button>
+      <p class="inline" id="numRot"></p>
+      <button class="inline" onclick="decreaseRotation()">Rotation -= 5</button>
+    </div>
+    <div class="inline">
+      <button class="inline" onclick="increaseStroke()">Stroke++</button>
+      <p class="inline" id="stroke"></p>
+      <button class="inline" onclick="decreaseStroke()">Stroke--</button>
+    </div>
+    <div>
+      <button id="download" onclick="download()">Download SVG</button>
+    </div>
+  </div>
+</body>
+</html>
